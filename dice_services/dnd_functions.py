@@ -1,6 +1,6 @@
 """
-This module uses utility functions to provide D&D specific functions, like generating a set of character attributes
-or calculating a single attribute value.
+This module uses utility functions to provide D&D specific functions, like generating a set of
+character attributes or calculating a single attribute value.
 """
 
 import typing

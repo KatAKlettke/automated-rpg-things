@@ -1,6 +1,6 @@
 """
-This module provides very basic utility function that are usually not called directly by a user but by more specific
-functions of the package
+This module provides very basic utility function that are usually not called directly by a user
+but by more specific functions of the package
 """
 
 import random
