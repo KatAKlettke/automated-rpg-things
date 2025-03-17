@@ -27,13 +27,30 @@ shakespeare_part_one_list: typing.List[str] = [
     "warped",
     "wayward",
     "weedy",
-    "yeasty"
+    "yeasty",
+    "brainsick",
+    "bawdy",
+    "fat",
+    "false",
+    "foul",
+    "greasy",
+    "infectious",
+    "kindless",
+    "lecherous",
+    "remorseless",
+    "rotten",
+    "sanguine",
+    "spherical",
+    "starveling",
+    "vile"
 ]
 
 shakespeare_part_one_meaning: typing.Dict[str, str] = {
-    "mewling": "",
-    "paunchy": "",
-    "pribbling": ""
+    "mewling": "cry feebly or querulously, whimper",
+    "paunchy": "having a large or protruding belly",
+    "pribbling": "pribble: a trivial dispute or discussion",
+    "puking": "lit. vomiting -> disgusting",
+    "puny": "small and weak"
 }
 
 shakespeare_part_two_list: typing.List[str] = [
@@ -59,14 +76,62 @@ shakespeare_part_two_list: typing.List[str] = [
     "tickle-brained",
     "toad-spotted",
     "unchin-snouted",
-    "weather-bitten"
+    "weather-bitten",
+    "sodden-witted",
+    "bat-fowling",
+    "beetle-brained",
+    "dismal-dreaming",
+    "elvish-mark'd",
+    "fat-kidneyed",
+    "folly-fallen",
+    "hell-hated",
+    "infant-like",
+    "three-inch",
+    "worsted-stocking"
 ]
 
-# TODO: finish this list (see trashcan/shakespearean_insults.png)
 shakespeare_part_three_list: typing.List[str] = [
     "lewdster",
     "lout",
-    "maggot-pie"
+    "maggot-pie",
+    "malt-worm",
+    "mammet",
+    "measle",
+    "minnow",
+    "miscreant",
+    "moldwarp",
+    "mumble-news",
+    "nut-hook",
+    "pigeon-egg",
+    "pignut",
+    "puttock",
+    "pumpion",
+    "ratsbane",
+    "scut",
+    "skainsmate",
+    "strumpet",
+    "varlot",
+    "vassal",
+    "whey-face",
+    "wagtail",
+    "coward",
+    "bed-presser",
+    "biscuit",
+    "boar pig",
+    "bull's-pizzle",
+    "carbuncle",
+    "death-token",
+    "eel-skin",
+    "fustilarian",
+    "harlot",
+    "hog",
+    "horseback-breaker",
+    "knave",
+    "madman",
+    "neat's-tongue",
+    "stock-fish",
+    "whoreson",
+    "worms-meat"
 ]
 
 
@@ -83,9 +148,10 @@ def shakespearean_insult(verbose: bool = False) -> str:
     random_number_list_three: int = random.randint(0, len(shakespeare_part_three_list) - 1)
 
     cat_one_word: str = shakespeare_part_one_list[random_number_list_one]
+    cat_two_word: str = shakespeare_part_two_list[random_number_list_two]
+    cat_three_word: str = shakespeare_part_three_list[random_number_list_three]
 
-    insult: str = "You " + cat_one_word + " " + shakespeare_part_two_list[random_number_list_two] + " " \
-                  + shakespeare_part_three_list[random_number_list_three]
+    insult: str = "You " + cat_one_word + " " + cat_two_word + " " + cat_three_word + "!"
 
     # TODO: finish translating the lists, then uncomment this
     #if verbose:
